@@ -1,0 +1,214 @@
+*{ 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family:'Aldrich', sans-serif;
+    background: white;
+}
+
+.titulo {
+    margin: 30px;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+}
+
+.texto {
+    margin: 0 auto 30px auto;
+    max-width: 900px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.subTitulo {
+    margin: 30px auto 5px auto;
+    color: #000000;
+    text-align: center;
+    font-size: 10px;
+}
+
+.subTexto {
+    margin-bottom: 0 auto 30px auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+.busca {
+    display: grid;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.buscaBox input {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 350px;
+    margin: 0 auto 0 auto;
+    background: #f0f0f0;
+    transition: all 0.2s ease;
+}
+
+.buscaBox input:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.buscaBox input:focus {
+    background-color: #ffffff;
+    border-color: #4437ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(68, 55, 255, 0.3);
+}
+
+.buscaButton button{
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    width: 100px;
+    margin: 5px auto 30px auto;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buscaButton button:hover {
+    background-color: #4437ff;
+    color: #ffffff;
+    border: 2px solid #4437ff;
+}
+
+.naoEncontrado {
+    display: none;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: #ff3737;
+    border: 1px solid #ff3737;
+    border-radius: 8px;
+    background-color: #fff5f5;
+}
+
+.listaBairros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 30px 0;
+    width: 100%;   
+}
+
+.bairro {
+    width: 100%;
+    max-width: 800px;
+}
+
+.bairroNome {
+    margin: 8px 0 0 0;
+    font-size: 12px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.bairroNome.active {
+    background-color: #4437ff;
+    color: #ffffff;
+    border-color: #928aff;
+    border-radius: 8px 8px 0 0;
+}
+
+.bairroNome:hover {
+    background-color: #4437ff;
+    color: #ffffff;
+    border-color: #928aff;
+}
+
+.listaEscolas {
+    display: none;
+    margin: 0 0 8px 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #fdfdfd;
+    border: 1px solid #f1f1f1;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.listaEscolas.active {
+    display: block;
+    border: 1px solid #4437ff;
+    border-top: none;
+}
+
+.escolaCard {
+    display: flex;
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);   
+}
+
+.escolaCard:hover {
+    background-color: #f3f9ff;
+    border-color:#9dd0ff;
+    cursor: pointer;
+}
+
+.escolaCard:active {
+    transform: scale(0.995);
+}
+
+.escolaInfo {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.escolaInfo h3 {
+    margin-top: 0px;
+    color: #111;
+    font-size: 1rem;
+}
+
+.escolaInfo p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.escolaImagem {
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.escolaImagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-top: 25px;
+}

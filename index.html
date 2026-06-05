@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Escolas em Mairinque/SP</title>
+
+    <link rel="stylesheet" href="css/styleindex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="titulo">
+         <h1>EDUCAÇÃO E MOBILIDADE EM MAIRINQUE - SP</h1>
+    </div>
+
+    <div class="texto">
+        <p>Uma solução voltada para o acesso à informação e a mobilidade estudantil em Mairinque. Este projeto de mapeamento escolar foi desenvolvido pelo aluno <strong>Vitor Davanzo</strong> para o curso de <strong>ADS da Uninter</strong>, unindo tecnologia e planejamento urbano.</p>
+        <p>A plataforma oferece uma consulta rápida às modalidades e informações de cada escola, exibe dados sobre a proximidade do transporte coletivo e conecta o usuário instantaneamente à localização oficial do Google Maps para apoio logístico das famílias.</p>
+    </div>
+
+    <div class="subTitulo">
+         <h1>LISTA DE ESCOLAS EM MAIRINQUE</h1>
+    </div>
+
+    <div class="subTexto">
+        <p>Explore as escolas disponíveis por bairro ou faça uma busca rápida abaixo:</p> 
+    </div>
+
+    <section class="busca">
+        <div class="buscaBox">
+            <input type="text" id="campoBusca" placeholder="Digite o nome da escola...">
+        </div>
+        <div class="buscaButton">
+            <button onclick= "pesquisar()">Buscar</button>
+        </div>
+    </section>
+
+    <main class="listaBairros">
+
+        <div class="naoEncontrado">
+            <p>Nenhuma escola encontrada. Por favor, tente novamente.</p>
+        </div>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>CENTRO</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/4QWVSLZVecxZ7VcZA">
+                    <div class="escolaInfo">
+                        <h3>Escola Particular - BERÇÁRIO NÚCLEO RECREATIVO HARMONIA</h3>
+                        <p><strong>Modalidade:</strong> Berçário.</p>
+                        <p><strong>Endereço:</strong> Rua Thomaz Natali, 185</p>
+                        <p><strong>Telefone:</strong> (11) 93084-7667</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 17h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 173m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Particular ''Berçário Núcleo Recreativo Harmonia''.jpg" alt="Imagem da fachada BERÇÁRIO NÚCLEO RECREATIVO HARMONIA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/mJzxN2Rs7iHMrtyo7">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - MARIA HAAK PEREIRA</h3>
+                        <p><strong>Modalidade:</strong> Creche.</p>
+                        <p><strong>Endereço:</strong> Avenida Alberto Cocozza, 705</p>
+                        <p><strong>Telefone:</strong> (11) 4246-1391</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 6h30 às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 137m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Maria Haak Pereira”.jpg" alt="Imagem da fachada MARIA HAAK PEREIRA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/zcF6yjXaYzURXnYy9">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFº MANUEL MARTINS VILLAÇA</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental de 1º a 5º ano.</p>
+                        <p><strong>Endereço:</strong> Avenida Dr. Gaspar Ricardo Júnior, 172</p>
+                        <p><strong>Telefone:</strong> (11) 4708-2613</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 165m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profº Manuel Martins Villaça”.jpg" alt="Imagem da fachada PROFº MANUEL MARTINS VILLAÇA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/T3zRmHV2dqvxHduy7">
+                    <div class="escolaInfo">
+                        <h3>Escola Estadual - ALTINA JÚLIA DE OLIVEIRA</h3>
+                        <p><strong>Modalidade:</strong> Ensino Médio da 1ª a 3ª série.</p>
+                        <p><strong>Endereço:</strong> Avenida Dr. Lamartine Navarro, 556</p>
+                        <p><strong>Telefone:</strong> (11) 2118-6016</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 57m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Estadual “Altina Júlia de Oliveira” .jpg" alt="Imagem da fachada ALTINA JÚLIA DE OLIVEIRA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/YEr4Qjt916HJimCV6">
+                    <div class="escolaInfo">
+                        <h3>Escola Estadual - ESCOLA TÉCNICA ESTADUAL DE MAIRINQUE (ETEC)</h3>
+                        <p><strong>Modalidade:</strong> Ensino Médio da 1ª a 3ª série e Ensino Técnico.</p>
+                        <p><strong>Endereço:</strong> Rua Antônio Alves de Souza, s/nº</p>
+                        <p><strong>Telefone:</strong> (11) 4718-3053</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 17h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 490m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Técnica Estadual de Mairinque ''ETEC''.jpg" alt="Imagem da fachada ESCOLA TÉCNICA ESTADUAL DE MAIRINQUE (ETEC)">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>CHÁCARA MANÃO</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/5iTjpFAW49qPF3do8">
+                    <div class="escolaInfo">
+                        <h3>Escola Particular - COLÉGIO ALIANÇA</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil, Fundamental do 1º ao 9º ano e Ensino Médio.</p>
+                        <p><strong>Endereço:</strong> Rua Miguel Ferreira Manão, 37</p>
+                        <p><strong>Telefone:</strong> (11) 97358-1540</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 17h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 58m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Particular ''Colégio Aliança''.jpg" alt="Imagem da fachada COLÉGIO ALIANÇA">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>CRISTAL</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/cepN6RyhPJniv4b97">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - FELIX GODINHO DE MORAES</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 6º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Estrada Municipal, 3217</p>
+                        <p><strong>Telefone:</strong> (11) 4246-8055</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 68m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Felix Godinho de Moraes”.jpg" alt="Imagem da fachada FELIX GODINHO DE MORAES">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>DONA CATARINA</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/pZazHnhZLJKfwkkr6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª PATRÍCIA PEZZOTA</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil.</p>
+                        <p><strong>Endereço:</strong> Rodovia Castelo Branco, km. 68</p>
+                        <p><strong>Telefone:</strong> (11) 4246-8479</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 28m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Patrícia Pezzota”.jpg" alt="Imagem da fachada PROFª PATRÍCIA PEZZOTA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/pZazHnhZLJKfwkkr6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª SARAH MAZZEO ALVES</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Rodovia Castelo Branco, km. 68</p>
+                        <p><strong>Telefone:</strong> (11) 4246-2300</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 28m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Sarah Mazzeo Alves”.jpg" alt="Imagem da fachada PROFª SARAH MAZZEO ALVES">
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>JARDIM CRUZEIRO</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/SSNTezU3MopkYGPp6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - EVA XAVIER DE OLIVEIRA</h3>
+                        <p><strong>Modalidade:</strong> Creche.</p>
+                        <p><strong>Endereço:</strong> Avenida Mitsuke, 950</p>
+                        <p><strong>Telefone:</strong> (11) 4708-7660</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 6h30 às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 35m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Eva Xavier de Oliveira”.jpg" alt="Imagem da fachada EVA XAVIER DE OLIVEIRA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/tsnZUfZdrYBE8BMG6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª VANDA HELFENSTENS AGUIAR</h3>
+                        <p><strong>Modalidade:</strong> Creche.</p>
+                        <p><strong>Endereço:</strong> Avenida Brasil Japão, 99</p>
+                        <p><strong>Telefone:</strong> (11) 2222-3191</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 271m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª Vanda Helfenstens Aguiar.jpg" alt="Imagem da fachada PROFª VANDA HELFENSTENS AGUIAR">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/GjdvKGM4ntDnLVb86">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - THEREZA CRISTIN WHITAKER RIBEIRO DE LIMA</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil - Integral.</p>
+                        <p><strong>Endereço:</strong> Av. Dr. José Maria Whitaker, 471</p>
+                        <p><strong>Telefone:</strong> (11) 4718-4400</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 16h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 104m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Thereza Cristina Whitaker Ribeiro de Lima”.jpg" alt="Imagem da fachada THEREZA CRISTIN WHITAKER RIBEIRO DE LIMA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/nk6TPbtsF5NQvR6MA">
+                    <div class="escolaInfo">
+                        <h3>Escola Particular - CENTRO EDUCACIONAL LUMINARE</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil.</p>
+                        <p><strong>Endereço:</strong> Avenida Mitsuke, 810</p>
+                        <p><strong>Telefone:</strong> (11) 4718-3138</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 164m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Particular ''Centro Educacional Luminare''.jpg" alt="Imagem da fachada CENTRO EDUCACIONAL LUMINARE">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/btovW1TsNDJVtX4u7">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFº EDUCADOR PAULO FREIRE</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 6º ao 9º ano e EJA.</p>
+                        <p><strong>Endereço:</strong> Avenida Mitsuke, 989</p>
+                        <p><strong>Telefone:</strong> (11) 4718-2395</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 35m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Prof. Educador Paulo Freire”.jpg" alt="Imagem da fachada PROFº EDUCADOR PAULO FREIRE">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/qzq16iAdaagz9sjW8">
+                    <div class="escolaInfo">
+                        <h3>Escola Estadual - PROFª MARIA DE OLIVEIRA LELLIS ITO</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 6º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Avenida Dr. José Maria Whitaker, s/n.º</p>
+                        <p><strong>Telefone:</strong> (11) 2118-6001</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 20m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Estadual “Professora Maria de Oliveira Lellis Ito.jpg" alt="Imagem da fachada PROFª MARIA DE OLIVEIRA LELLIS ITO">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>JARDIM FLORA</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/aCb1F1eZSakDxC1x6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª MALVIANE DE CÁSSIA AGUIAR</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil.</p>
+                        <p><strong>Endereço:</strong> Rua Catarina Mercado Comodo, 808</p>
+                        <p><strong>Telefone:</strong> (11) 4718-6112</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h30 às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 150m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Malviane de Cássia Aguiar”.jpg" alt="Imagem da fachada PROFª MALVIANE DE CÁSSIA AGUIAR">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/aCb1F1eZSakDxC1x6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª MARIA HELENA CHESINE</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Rua Catarina Mercado Comodo, 808</p>
+                        <p><strong>Telefone:</strong> (11)  4708-3656 | (11) 4708-4129</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h10.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 150m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Maria Helena Chesine”.jpg" alt="Imagem da fachada PROFª MARIA HELENA CHESINE">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>JARDIM VITÓRIA</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/Ywhi23s92jGMgQvf7">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - AUGUSTA CAMARGO MARTINS DO CARMO</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil.</p>
+                        <p><strong>Endereço:</strong> Rua Mário dos Santos Bernardo, s/nº</p>
+                        <p><strong>Telefone:</strong> (11) 4708-7273</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h30 às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 40m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Augusta Camargo Martins do Carmo”.jpg" alt="Imagem da fachada PROFª AUGUSTA CAMARGO MARTINS DO CARMO">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/BeYRyn65ayJKrMhP7">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª DIRCE MANIS RODRIGUES</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 1º ao 5º ano.</p>
+                        <p><strong>Endereço:</strong> Rua João Assis de Castro, 648</p>
+                        <p><strong>Telefone:</strong> (11) 4718-6119</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 58m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Dirce Manis Rodrigues”.jpg" alt="Imagem da fachada PROFª DIRCE MANIS RODRIGUES">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/hVLctHyeLvcmrn5U9">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª MARIA LÚCIA DE ALMEIDA LUCCA BITTENCOURT</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 6º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Rua Orion Viaro, 513</p>
+                        <p><strong>Telefone:</strong> (11) 4708-3477</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 18h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 10m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Maria Lúcia de Almeida Lucca Bittencourt”.jpg" alt="Imagem da fachada PROFª MARIA LÚCIA DE ALMEIDA LUCCA BITTENCOURT">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>MARMELEIRO</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/TzssiPizLXmJD8dA6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª THEREZA CARAMANTE CHESINE</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 6º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Rua Bráulio Vasconcelos de Menezes, 309</p>
+                        <p><strong>Telefone:</strong> (11) 4708-4526</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 18h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 325m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Thereza Caramante Chesine”.jpg" alt="Imagem da fachada PROFª THEREZA CARAMANTE CHESINE">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>MATO DENTRO</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/KLbicW9HtWx5JqFj7">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - JUARES GERALDO REIS</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil (Integral) e Ensino Fundamental do 1º ao 5º ano.</p>
+                        <p><strong>Endereço:</strong> Estrada Municipal Mato Dentro, s/n.º </p>
+                        <p><strong>Telefone:</strong> (11) 97429-8916</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h40 às 16h20.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 48m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Juares Geraldo Reis ”.jpg" alt="Imagem da fachada JUARES GERALDO REIS">  
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>MONJOLINHO</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/JzNKgakxHMYWgpHQA">
+                    <div class="escolaInfo">
+                        <h3>Escola Particular - OBJETIVO MAIRINQUE</h3>
+                        <p><strong>Modalidade:</strong> Educação Fundamental do 1º ao 5º ano.</p>
+                        <p><strong>Endereço:</strong> R. José Alves Ferreira Filho, 59</p>
+                        <p><strong>Telefone:</strong> (11) 4718-2255</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 17h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 400m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Particular ''Objetivo Mairinque''.jpg" alt="Imagem da fachada OBJETIVO MAIRINQUE">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>MOREIRAS</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/1Ddon2zRAmSxjEU48">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - EURICA BORGES PEREIRA</h3>
+                        <p><strong>Modalidade:</strong> Creche</p>
+                        <p><strong>Endereço:</strong> Rua Cacilda Mendes, s/n</p>
+                        <p><strong>Telefone:</strong> (11) 4708-9133</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h30 às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> sem informação.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Eurica Borges Pereira”.jpg" alt="Imagem da fachada EURICA BORGES PEREIRA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/QgCXHAoG5bPTdNLMA">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª NEUZA MARIA BERTONCELLO</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil e Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Estrada Municipal de Mairinque, 238/94</p>
+                        <p><strong>Telefone:</strong> (11) 4708-8079</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 150m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Neuza Maria Bertoncello”.jpg" alt="Imagem da fachada PROFª NEUZA MARIA BERTONCELLO">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>NOVA MAIRINQUE</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/yutDdSd7FWFfLx6YA">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - OLGA BARBIERI</h3>
+                        <p><strong>Modalidade:</strong> Creche</p>
+                        <p><strong>Endereço:</strong> Rua Felipe dos Santos, 110</p>
+                        <p><strong>Telefone:</strong> (11) 4718-6116</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 6h30 às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 47m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Olga Barbieri”.jpg" alt="Imagem da fachada OLGA BARBIERI">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/ymryYCnfX7sb1ndU8">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - CESIRA MARIA JOSÉ ANTUNES SIEDLER</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil</p>
+                        <p><strong>Endereço:</strong> Rua Adélia, 30</p>
+                        <p><strong>Telefone:</strong> (11) 4718-6125</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h30 às 17h10.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 100m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Cesira Maria José Antunes Siedler”.jpg" alt="Imagem da fachada CESIRA MARIA JOSÉ ANTUNES SIEDLER">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/syXWRAp4CUyMbfcH9">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª MARIA IGNÊS BLANCO ABREU</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Rua Prudente de Moraes, 100</p>
+                        <p><strong>Telefone:</strong> (11) 4708-2765</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h10.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 215m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Maria Ignês Blanco Abreu”.jpg" alt="Imagem da fachada PROFª MARIA IGNÊS BLANCO ABREU">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>PORTA DO SOL</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/WZkc6Tzm2gj8sZjWA">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - FELIPE LUTFALL</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil e Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Rua Álvares de Azevedo, 801</p>
+                        <p><strong>Telefone:</strong> (11) 4708-1556</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 13m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Felipe Lutfalla”.jpg" alt="Imagem da fachada FELIPE LUTFALLA">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>RECANTO DOS EUCALIPTOS</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/hxRhjMgNvByaUN5x8">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - MODESTA JIANELLI RUSSO</h3>
+                        <p><strong>Modalidade:</strong> Creche</p>
+                        <p><strong>Endereço:</strong> Rua F, 100</p>
+                        <p><strong>Telefone:</strong> (11) 4718-4402</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 18h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 15m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Modesta Jianelli Russo”.jpg" alt="Imagem da fachada MODESTA JIANELLI RUSSO">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/hxRhjMgNvByaUN5x8">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFº MÁRCIO DE CAMARGO</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil e Ensino Fundamental do 1º ao 5º ano.</p>
+                        <p><strong>Endereço:</strong> Rua F, 100</p>
+                        <p><strong>Telefone:</strong> (11) 4708-7090</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h30 às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 15m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Prof. Márcio de Camargo”.jpg" alt="Imagem da fachada PROFº MÁRCIO DE CAMARGO">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/3nDFh2pQudPn1vKi7">
+                    <div class="escolaInfo">
+                        <h3>Escola Estadual - PROFº JOSÉ PINTO DO AMARAL</h3>
+                        <p><strong>Modalidade:</strong>Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Av. Preciosa Purificação Ramos, 1031</p>
+                        <p><strong>Telefone:</strong> (11) 4708-7090</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 6h30 às 17h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 25m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Estadual “Prof° Jose Pinto do Amaral” .jpg" alt="Imagem da fachada PROFº JOSÉ PINTO DO AMARAL">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>RENEVILLE</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/TZ2MTuzq7TvaFbML8">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª LARAINE DE CÁSSIA AGUIAR RODRIGUES VALDREZ</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 1º ao 5º ano.</p>
+                        <p><strong>Endereço:</strong> Avenida das Flores, 100</p>
+                        <p><strong>Telefone:</strong> (11) 4718-6126</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h10.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 137m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Laraine de Cássia Aguiar Rodrigues Valdrez”.jpg" alt="Imagem da fachada PROFª LARAINE DE CÁSSIA AGUIAR RODRIGUES VALDREZ">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>SEBANDILHA</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/V2Nz34W7mMewPyrW9">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - GABRIEL ROCHA</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil e Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Rua Olavo Bilac, 15</p>
+                        <p><strong>Telefone:</strong> (11) 4246-4523</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 30m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Gabriel Rocha”.jpg" alt="Imagem da fachada GABRIEL ROCHA">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>SETÚBAL</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/wuhnvUJgC9cG66f89">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFº HORÁCIO RIBEIRO</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Av. Brasil/Japão, 2500</p>
+                        <p><strong>Telefone:</strong> (11) 4708-3855</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h10.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 15m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Prof. Horácio Ribeiro”.jpg" alt="Imagem da fachada PROFº HORÁCIO RIBEIRO">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>SOROCABANA</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/EhQrgK8u7TfsrW4e6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - JOVELINO DOS SANTOS</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil.</p>
+                        <p><strong>Endereço:</strong> Rua Jonas Zabrockis, 440</p>
+                        <p><strong>Telefone:</strong> (11) 4718-4599</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h20 às 16h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 300m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Jovelino dos Santos”.jpg" alt="Imagem da fachada JOVELINO DOS SANTOS">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/c35mkviNPZ6n3q899">
+                    <div class="escolaInfo">
+                        <h3>Escola Particular - PLENITUDE</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental do 1º ao 9º ano.</p>
+                        <p><strong>Endereço:</strong> Av. 27 de Outubro, 587</p>
+                        <p><strong>Telefone:</strong> (11) 2428-5139</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 17h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 390m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Particular ''Plenitude''.jpg" alt="Imagem da fachada PLENITUDE">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>TERRAS DE SÃO JOSÉ</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/kMzHHDPmrY6K64Vd7">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª DENISE GAMA GRANITO</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil.</p>
+                        <p><strong>Endereço:</strong> Rua Durval Luiz de Oliveira, 1001</p>
+                        <p><strong>Telefone:</strong> (11) 4718-6120</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h30 às 17h10.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 5m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Denise Gama Granito”.jpg" alt="Imagem da fachada PROFª DENISE GAMA GRANITO">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>TRÊS LAGOINHAS</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/4VVh5AW6bRKoB8D59">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - DONA IDA PONSONI ZAPAROLLI</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil (Integral).</p>
+                        <p><strong>Endereço:</strong> Rua Germano da Cruz, 86</p>
+                        <p><strong>Telefone:</strong> (11) 4718-5035</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 16h30.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 248m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Dona Ida Ponsoni Zaparolli”.jpg" alt="Imagem da fachada DONA IDA PONSONI ZAPAROLLI">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>VILA BARRETO</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/w7GXVgnLLWYyff3H8">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - UMBERTO SPERANDIO</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil (Integral).</p>
+                        <p><strong>Endereço:</strong> Rua João Bueno, 61</p>
+                        <p><strong>Telefone:</strong> (11) 4718-6773</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 8h às 16h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 55m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Umberto Sperandio”.jpg" alt="Imagem da fachada UMBERTO SPERANDIO">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bairro">
+            <div class="bairroNome">
+                <h2>VILA GRANADA</h2>
+            </div>
+            <div class="listaEscolas">
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/bjW6mCpo49avRTqL6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFº MILTON DORES DE PAULA</h3>
+                        <p><strong>Modalidade:</strong> Creche.</p>
+                        <p><strong>Endereço:</strong> Rua Horácio Manley Lane, Lote 22, Quadra A</p>
+                        <p><strong>Telefone:</strong> (11) 2222-3393</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 60m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal ''Profº Milton Dores e Paula''.jpg" alt="Imagem da fachada PROFº MILTON DORES DE PAULA">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/gzsURbfpucR24uWx9">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª SILVIA HELENA GARCIA MARTINS</h3>
+                        <p><strong>Modalidade:</strong> Educação Infantil e Ensino Fundamental (1º Ano).</p>
+                        <p><strong>Endereço:</strong> Rua Américo Pereira, s/n.º</p>
+                        <p><strong>Telefone:</strong> (11) 4718-6123</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h30 às 17h10.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 60m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Silvia Helena Garcia Martins”.jpg" alt="Imagem da fachada PROFª SILVIA HELENA GARCIA MARTINS">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/B7mjFatGR1t2bihh6">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª BENEDITA CAMARGO VALÊNCIO</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental de 1º a 5º ano.</p>
+                        <p><strong>Endereço:</strong> Rua Manoel Francisco de Campos, 431</p>
+                        <p><strong>Telefone:</strong> (11) 4708-4008</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h10 às 17h.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 330m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Benedita Camargo Valêncio”.jpg" alt="Imagem da fachada PROFª BENEDITA CAMARGO VALÊNCIO">
+                    </div>
+                </article>
+                <article class="escolaCard" data-maps="https://maps.app.goo.gl/gBWX1RHL99DRM7xL7">
+                    <div class="escolaInfo">
+                        <h3>Escola Municipal - PROFª EMÍLIA MIRANDA BORGES PEREIRA</h3>
+                        <p><strong>Modalidade:</strong> Ensino Fundamental de 6º a 9º ano.</p>
+                        <p><strong>Endereço:</strong> Av. João Guedes do Nascimento, s/n.º</p>
+                        <p><strong>Telefone:</strong> (11) 4718-2521</p>
+                        <p><strong>Atendimento:</strong> De segunda a sexta-feira, das 7h às 17h50.</p>
+                        <p><strong>Ponto de ônibus mais próximo:</strong> 137m.</p>
+                    </div>
+                    <div class="escolaImagem">
+                        <img src="img/Escola Municipal “Profª. Emília Miranda Borges Pereira”.jpg" alt="Imagem da fachada PROFª EMÍLIA MIRANDA BORGES PERERIRA">
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <div class="footer">
+         RU 4975058
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>    
+
+</body>
+</html>
